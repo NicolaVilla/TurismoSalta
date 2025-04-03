@@ -19,13 +19,17 @@ footer{
     padding: 20px;
     text-align: center;
 }
-/* Carousel Caption */
+
 
 .carousel-caption {
-    bottom: 50%;
+    bottom: 80%;
     transform: translate(0, 50%);
 }
-
+h1{
+    font-size: 5rem;
+    font-weight: 500;
+    color:#fff;
+}
 .carousel-caption h5 {
     font-size: 1rem;
     font-weight: 700;
@@ -36,7 +40,7 @@ footer{
     height: 600px;
     object-fit: cover;
 }
-/* Responsive */
+
 
 @media (min-width: 992px) {
 

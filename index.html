@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turismo en Salta</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -47,20 +49,45 @@
           </div>
     </section>
    </header>
+   <!--Cuerpo del STORE-->
    <main class="container mt-5">
     <h2>Porqué elegir Salta</h2>
     <p>Salta es ideal para tu próximo viaje por su ubicación estratégica en el Norte Argentino. Esta situada al pie de la Cordillera de los Andes lo que nos permite tener una gran diversidad de paisajes y atractivos turísticos con una completa conectividad aérea y terrestre nacional e internacional.  
 
         Contamos con servicios de alta calidad, anfitriones con gran profesionalismo y cordialidad para brindar una amplia oferta de actividades recreativas y culturales, gastronomía regional y gourmet y nuestros vinos de altura. 
         
-         Descubrí en Salta un estilo de vida auténtico.</p>
+         Descubrí en Salta un estilo de vida auténtico.</p> 
+    <!--PRODUCTOS-->
+      <h2 class="mt-5">PRODUCTOS</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="product-card d-flex">
+            <img src="./assets/ceramicos.jpg" alt="Producto 1" class="product-img me-4">
+            <div>
+              <h5>Ceramicos</h5>
+              <p>Precio: 20000</p>
+              <button class="btn btn-success btn-buy" onclick="comprarProducto('Ceramicos',20000)">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="product-card d-flex">
+            <img src="./assets/tazas.jpg" alt="Producto 2" class="product-img me-4">
+            <div>
+              <h5>Tazas</h5>
+              <p>Precio: 15000</p>
+              <button class="btn btn-success btn-buy" onclick="comprarProducto('Taza',15000)">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
    </main>
 
 <!--FOOTER-->
    <footer >
-        <p>Imagenes tomadas de la pagina visit Salta</p>
+      
+    <p>Imagenes tomadas de la pagina visit Salta</p>
         <a href="https://visitsalta.ar/">visitsalta.ar</a>
-   </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+   </footer> 
 </body>
 </html>
